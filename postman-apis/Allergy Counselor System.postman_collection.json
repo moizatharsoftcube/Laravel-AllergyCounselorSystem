@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "885c74e4-7dae-4e6d-9bfa-2f2276168874",
+		"name": "Allergy Counselor System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21507549"
+	},
+	"item": [
+		{
+			"name": "Add Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "name",
+							"type": "text"
+						},
+						{
+							"key": "nutrients",
+							"value": "nutrients",
+							"type": "text"
+						},
+						{
+							"key": "nutrients_image",
+							"type": "file",
+							"src": "/C:/Users/Moiz/Pictures/Saved Pictures/ezgif.com-gif-maker.png"
+						},
+						{
+							"key": "ingredients",
+							"value": "ingredients",
+							"type": "text"
+						},
+						{
+							"key": "ingredients_image",
+							"type": "file",
+							"src": "/C:/Users/Moiz/Pictures/Saved Pictures/ezgif.com-gif-maker.png"
+						},
+						{
+							"key": "front_image",
+							"type": "file",
+							"src": "/C:/Users/Moiz/Pictures/Saved Pictures/ezgif.com-gif-maker.png"
+						},
+						{
+							"key": "back_image",
+							"type": "file",
+							"src": "/C:/Users/Moiz/Pictures/Saved Pictures/ezgif.com-gif-maker.png"
+						},
+						{
+							"key": "expiry",
+							"value": "2022-11-21",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/add-product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add-product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show all products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/show-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"show-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show single product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/show-single-product/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"show-single-product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
